@@ -46,6 +46,9 @@ h3 {
     font-style: oblique;
     color: #e3cbbe;
 }
+.text-container h3 {
+    display: none;
+}
 /*Dots*/
 .dots-container {
     display: flex;
@@ -67,4 +70,29 @@ h3 {
 }
 input:checked label {
     background-color: #e3cbbe;
+}
+/*Switching animation*/
+#slide1:checked ~ .slides-wrapper .slides {
+    margin-left: 0;
+}
+#slide2:checked ~ .slides-wrapper .slides {
+    margin-left: -100%;
+}
+#slide3:checked ~ .slides-wrapper .slides {
+    margin-left: -200%;
+}
+#slide4:checked ~ .slides-wrapper .slides {
+    margin-left: -300%;
+}
+#slide1:checked ~ .container h3:nth-child(1),
+#slide2:checked ~ .container h3:nth-child(2),
+#slide3:checked ~ .container h3:nth-child(3),
+#slide4:checked ~ .container h3:nth-child(4) {
+    display: inline;
+}
+#slide1:checked ~ .container label:nth-child(1),
+#slide2:checked ~ .container label:nth-child(2),
+#slide3:checked ~ .container label:nth-child(3),
+#slide4:checked ~ .container label:nth-child(4) {
+    background-color: #361a0b;
 }
