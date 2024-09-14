@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #361a0b;
+}
+/*Slider*/
+.slider {
+    position: relative;
+    top: 30px;
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+}
+.slides-wrapper {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    width: 400%;
+    transition: all 1s ease-in-out;
+}
+.slide {
+    width: 100%;
+}
+input[type='radio'] {
+    display: none;
+}
