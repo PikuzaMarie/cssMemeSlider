@@ -13,7 +13,7 @@ body {
     position: relative;
     top: 30px;
     margin: 0 auto;
-    width: 50%;
+    width: 48%;
     justify-content: center;
 }
 .slides-wrapper {
@@ -33,3 +33,17 @@ body {
 input[type='radio'] {
     display: none;
 }
+/*Container for texts and dots*/
+.container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+/*Text*/
+h3 {
+    font: 18px/1.5 Sans Source Pro, sans-serif;
+    font-weight: 400;
+    font-style: oblique;
+    color: #e3cbbe;
+}
+/*Dots*/
