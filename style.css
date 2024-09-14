@@ -47,3 +47,24 @@ h3 {
     color: #e3cbbe;
 }
 /*Dots*/
+.dots-container {
+    display: flex;
+}
+.dots-container label {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #e3cbbe;
+    border-radius: 100%;
+    background-color: #e3cbbe;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+.dots-container label:not(:last-child) {
+    margin-right: 8px;
+}
+.dots-container label:hover {
+    background-color: #361a0b;
+}
+input:checked label {
+    background-color: #e3cbbe;
+}
