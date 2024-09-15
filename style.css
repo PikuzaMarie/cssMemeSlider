@@ -1,5 +1,6 @@
 :root {
     --dark-brown: #361a0b;
+    --orange: #fb9415;
     --beige: #e3cbbe;
 }
 * {
@@ -74,7 +75,8 @@ h3 {
     margin-right: 0.75rem;
 }
 .dots-container label:hover {
-    background-color: var(--dark-brown);
+    background-color: var(--orange);
+    border-color: var(--orange);
 }
 input:checked label {
     background-color: var(--beige);
