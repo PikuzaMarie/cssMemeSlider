@@ -9,7 +9,7 @@
 }
 body {
     display: flex;
-    height: 100vh;
+    height: 100%;
     background-color: var(--dark-brown);
 }
 /*Slider*/
@@ -17,7 +17,7 @@ body {
     position: relative;
     top: 30px;
     margin: 0 auto;
-    width: 48%;
+    width: 50%;
     justify-content: center;
 }
 .slides-wrapper {
@@ -43,14 +43,12 @@ input[type='radio'] {
 /*Container for texts and dots*/
 .container {
     display: flex;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     justify-content: space-between;
 }
 /*Text*/
 h3 {
-    font: 18px/1.5 Sans Source Pro, sans-serif;
-    font-weight: 400;
-    font-style: oblique;
+    font: oblique 400 1.125rem/1.5 Sans Source Pro, sans-serif;
     color: var(--beige);
 }
 .text-container h3 {
@@ -61,8 +59,8 @@ h3 {
     display: flex;
 }
 .dots-container label {
-    width: 18px;
-    height: 18px;
+    width: 1.125rem;
+    height: 1.125rem;
     border: 1px solid var(--beige);
     border-radius: 100%;
     background-color: var(--beige);
@@ -70,7 +68,7 @@ h3 {
     cursor: pointer;
 }
 .dots-container label:not(:last-child) {
-    margin-right: 8px;
+    margin-right: 0.5rem;
 }
 .dots-container label:hover {
     background-color: var(--dark-brown);
