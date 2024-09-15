@@ -55,6 +55,15 @@ h3 {
 }
 .text-container h3 {
     display: none;
+    animation: text-change 1s forwards;
+}
+@keyframes text-change {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 /*Dots*/
 .dots-container {
