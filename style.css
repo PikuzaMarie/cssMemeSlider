@@ -18,9 +18,7 @@ body {
 .slider {
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 30px;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     width: 50%;
     justify-content: center;
 }
