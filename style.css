@@ -9,11 +9,14 @@
 }
 body {
     display: flex;
+    width: 100%;
     height: 100%;
     background-color: var(--dark-brown);
 }
 /*Slider*/
 .slider {
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: 30px;
     margin: 0 auto;
@@ -68,7 +71,7 @@ h3 {
     cursor: pointer;
 }
 .dots-container label:not(:last-child) {
-    margin-right: 0.5rem;
+    margin-right: 0.75rem;
 }
 .dots-container label:hover {
     background-color: var(--dark-brown);
@@ -100,4 +103,29 @@ input:checked label {
 #slide3:checked ~ .container label:nth-child(3),
 #slide4:checked ~ .container label:nth-child(4) {
     background-color: var(--dark-brown);
+}
+@media (width < 900px) {
+    .container {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .text-container,
+    .dots-container,
+    .slider {
+        justify-content: center;
+    }
+    .slider {
+        width: 80%
+    }
+    .slides-wrapper {
+        height: 450px;
+    }
+}
+@media(max-width: 400px) {
+    .slider {
+        width: 75%
+    }
+    .slides-wrapper {
+        height: 200px;
+    }
 }
