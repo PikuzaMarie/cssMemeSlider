@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="slider">
+        <!--Radio buttons-->
+        <input checked type="radio" name="slider" id="slide1">
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <!--Window with slides-->
+        <div class="slides-wrapper">
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/image-1.jpg" alt="image-1">
+                </div>
+                <div class="slide">
+                    <img src="images/image-2.jpg" alt="image-2">
+                </div>
+                <div class="slide">
+                    <img src="images/image-3.jpg" alt="image-3">
+                </div>
+                <div class="slide">
+                    <img src="images/image-4.jpg" alt="image-4">
+                </div>
+            </div>
+        </div>
+        <!--Container with dots and texts-->
+        <div class="container">
+            <div class="text-container">
+                <h3>It's already autemn</h3>
+                <h3>So let's have a walk with an umbrella</h3>
+                <h3>And enjoy the nature turning bright lights on</h3>
+                <h3>Promise you lots of coffee and coziness! Shall we?</h3>
+            </div>
+            <div class="dots-container">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
