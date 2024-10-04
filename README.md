@@ -1,2 +1,2 @@
 # cssMemeSlider
-Link to deploy: https://pikuzamarie.github.io/cssMemeSlider/index.html
+Link to PR https://github.com/PikuzaMarie/cssMemeSlider/pull/1
